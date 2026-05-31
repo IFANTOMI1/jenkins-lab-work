@@ -12,7 +12,7 @@ pipeline {
 
                 sshPublisher(publishers: [
                     sshPublisherDesc(
-                        configName: 'YourServerName', 
+                        configName: 'OsmanNuriServer', 
                         transfers: [
                             sshTransfer(
                                 sourceFiles: 'app.py, Dockerfile',
