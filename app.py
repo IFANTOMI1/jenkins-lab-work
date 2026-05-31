@@ -3,6 +3,7 @@ import os
 
 app = Flask(__name__)
 
+# Default route
 @app.route('/')
 def hello():
     return f"Hello! App is running. Build Number: {os.getenv('BUILD_ID', 'unknown')}"
